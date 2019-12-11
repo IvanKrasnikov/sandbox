@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sandbox</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+	<div class="items">
+		<div class="item" id="divId">div id</div>
+		<div class="item">item 1</div>
+		<div class="item">item 2</div>
+		<div class="item">item 3</div>
+		<div class="item">item 4</div>
+	</div>
+
+	<div class="circle__component" id="circleComponent">
+		<svg class="circle__svg" width="104" heigth="104">
+			<circle class="circle__border--default" cx="52" cy="52" r="42"></circle>
+			<circle class="circle__border" cx="52" cy="52" r="42"></circle>
+		</svg>
+		<div class="circle__percents">
+			<input type="number" class="circle__percents-value" contenteditable="true" value="0">
+		</div>
+	</div>
+
+	<div class="switcher hidden-element">
+		<div class="switcher__wrapper">
+			<label class="wrapper__label">
+				<input type="checkbox" name="trololo" class="wrapper__checkbox">
+				<div class="switcher__state switcher__off"><span>Выкл</span></div>
+				<div class="switcher__trigger"></div>
+				<div class="switcher__state switcher__on"><span>Вкл</span></div>
+			</label>
+		</div>
+	</div>
+
+	<div class="gallery hidden-element">
+		<div class="gallery__list">
+			<div class="gallery__item gallery__item--active">
+				<img class="gallery__img" src="images/gallery/coffee-einstein.jpg" alt="">
+			</div>
+			<div class="gallery__item">
+				<img class="gallery__img" src="images/gallery/Daddy.jpg" alt="">
+			</div>
+			<div class="gallery__item">
+				<img class="gallery__img" src="images/gallery/dog.jpg" alt="">
+			</div>
+			<div class="gallery__item">
+				<img class="gallery__img" src="images/gallery/dreams-reality.jpg" alt="">
+			</div>
+			<div class="gallery__item">
+				<img class="gallery__img" src="images/gallery/drunk.jpg" alt="">
+			</div>
+			<div class="gallery__item">
+				<img class="gallery__img" src="images/gallery/earth.jpg" alt="">
+			</div>
+			<div class="gallery__item">
+				<img class="gallery__img" src="images/gallery/ski.jpg" alt="">
+			</div>
+		</div>
+		<div class="gallery__buttons">
+			<button type="button" class="gallery__button galleryPrevButton">prev</button>
+			<button type="button" class="gallery__button galleryNextButton">next</button>
+		</div>
+	</div>
+
+	<div class="profile-main-loader">
+	  <div class="loader">
+	    <svg class="circular-loader" viewBox="25 25 50 50">
+	      <circle class="loader-path" cx="50" cy="50" r="20" fill="none" stroke-width="2" stroke-miterlimit="10"/>
+	    </svg>
+	  </div>
+	</div>
+
+	<script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>
